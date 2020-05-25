@@ -12,6 +12,7 @@ import { SearchComponent } from './components/search/search.component';
 
 // Rutas
 import { ROUTES } from './app.routes';
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ROUTES } from './app.routes';
     NavbarComponent,
     HomeComponent,
     ArtistaComponent,
-    SearchComponent
+    SearchComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,
