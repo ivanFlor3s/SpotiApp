@@ -1,5 +1,10 @@
 <app-loading *ngIf="loading"></app-loading>
 
-<h1> New Releses
-</h1>
+<div class="alert alert-danger" role="alert" *ngIf="error">
+    <h3> Error </h3>
+    <p>
+        {{errorMessage}}
+    </p>
+</div>
+
 <app-tarjetas [items]='canciones'> </app-tarjetas>
